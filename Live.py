@@ -43,11 +43,6 @@ def level(game):
         play_me(difficult)
 
 
-#if __name__ == '__main__':
-
-#welcome()
-#game_num = load_game()
-#level(game_num)
 
 
 

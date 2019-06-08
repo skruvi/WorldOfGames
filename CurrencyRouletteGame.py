@@ -1,6 +1,7 @@
 
 import random
 from forex_python.converter import CurrencyRates
+from Score import score_calc
 
 def get_money_interval():
 
@@ -23,6 +24,7 @@ def play_me(difficult):
     high_interval = (int(conversion) + (5 - d))
     if high_interval >= int(aaa) and int(aaa) >= low_interval:
         print(True)
+        score_calc(difficult)
     else:
         print(False)
 

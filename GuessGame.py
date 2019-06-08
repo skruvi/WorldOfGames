@@ -1,4 +1,5 @@
 import random
+from Score import score_calc
 
 def generate_number(diff):
     for x in range(10):
@@ -20,3 +21,4 @@ def compare_results(diff):
 def play(difficult):
     diff = int(difficult)
     compare_results(diff)
+    score_calc(difficult)

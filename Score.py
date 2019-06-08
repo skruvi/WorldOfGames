@@ -12,13 +12,20 @@
 # the current score in the scores file, if it fails it will create a new one and will use it to save
 # the current score.
 
-#import Utils
-#from Live import welcome
+#from Utils import score_file_name
+import Live
 
-def add_score(name):
-    f = open("score.txt", "w")
-    f.write(name)
-    f.close()
+def score_calc(diffcult):
+    POINTS_OF_WINNING = (int(diffcult) * 3) + 5
+    print(POINTS_OF_WINNING)
+    add_score(POINTS_OF_WINNING)
 
-    f = open("score.txt", "r")
-    print(f.read())
+
+def add_score(POINTS_OF_WINNING):
+    new_file = open("Scores.txt", "w")
+    print(POINTS_OF_WINNING)
+    new_file.write(str(POINTS_OF_WINNING))
+    new_file.close()
+
+
+

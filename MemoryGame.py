@@ -1,7 +1,7 @@
 import random
 import time
 from os import system
-
+from Score import score_calc
 
 def generate_sequence(difficult):
     list_of_num = random.sample(range(0, 101), int(difficult))
@@ -25,10 +25,12 @@ def is_list_equal(difficalt):
 
     if set(user) == set(random):
         print("True")
+        score_calc(difficalt)
     else:
         print("False")
 
 def play1(difficalt):
     is_list_equal(difficalt)
+
 
 
