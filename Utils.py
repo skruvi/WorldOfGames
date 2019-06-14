@@ -1,16 +1,20 @@
 import os
-from Score import *
+from MainScores import read_score
+#from one import score_server
+
 
 def score_file_name():
-    SCORES_FILE_NAME = print("Score file is Scores.txt")
+    print("Score file is Scores.txt")
+    SCORES_FILE_NAME = "Scores.txt"
     print("######################add_score")
-    #add_score(SCORES_FILE_NAME)
-    #SCORES_FILE_NAME.close()
-score_file_name()
+    read_score(SCORES_FILE_NAME)
+    #score_server(SCORES_FILE_NAME)
+
+#score_file_name()
 def error_code():
     BAD_RETURN_CODE = "#Err666"
     print(BAD_RETURN_CODE)
-error_code()
+
 def screen_cleaner():
     os.system('cls')
 
