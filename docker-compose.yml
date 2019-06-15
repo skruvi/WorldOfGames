@@ -1,0 +1,11 @@
+version: '3'
+services:
+  wog:
+    image: skruvi/worldofgames:latest
+    restart: always
+    build: .
+    ports:
+      - "8777:8777"
+    # volumes:
+    #   - /C/DevOps Course/chromedriver.exe:/DevOps Course/
+  

@@ -6,6 +6,8 @@ import time
 
 def test_scores_service():
     driver = webdriver.Chrome(executable_path="C:\\DevOps Course\\chromedriver")
+    #driver = webdriver.Chrome(executable_path="DevOps Course/chromedriver")
+    #driver = webdriver.Chrome(executable_path="usr/local/bin/chromedriver")
     driver.get("http://127.0.0.1:8777/")
     score_val = driver.find_element_by_id('score').text
     time.sleep(10)
@@ -27,5 +29,4 @@ def main_function():
         print("your score table is out of range")
         sys.exit(1)
 
-
-
+#main_function()
