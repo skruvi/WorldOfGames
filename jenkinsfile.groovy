@@ -1,5 +1,6 @@
 node any {
+    cleanWs()
     stage('Build') {
-        bat label: '', script: ' docker build -f ./Dockerfile . -t skruvi/worldofgames:latest'
+        sh label: '', script: 'docker build -f ./Dockerfile . -t skruvi/worldofgames:latest'
     }
 }
