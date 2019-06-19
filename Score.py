@@ -5,7 +5,7 @@ import Live
 
 def score_calc(diffcult):
     POINTS_OF_WINNING = (int(diffcult) * 3) + 5
-    print(POINTS_OF_WINNING)
+    #print(POINTS_OF_WINNING)
     add_score(POINTS_OF_WINNING)
 
 

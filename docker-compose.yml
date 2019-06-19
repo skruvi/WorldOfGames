@@ -6,6 +6,6 @@ services:
     build: .
     ports:
       - "8777:8777"
-    # volumes:
-    #   - /C/DevOps Course/chromedriver.exe:/DevOps Course/
+    volumes:
+      - /c/Users/skruvi/PycharmProjects/WorldOfGames/Scores.txt:/Scores.txt
   

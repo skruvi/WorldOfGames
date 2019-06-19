@@ -3,7 +3,7 @@ from MainScores import read_score
 
 
 def score_file_name():
-    print("Score file is Scores.txt")
+    #print("Score file is Scores.txt")
     SCORES_FILE_NAME = "Scores.txt"
     read_score(SCORES_FILE_NAME)
 
