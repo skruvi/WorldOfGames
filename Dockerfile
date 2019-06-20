@@ -4,7 +4,5 @@ RUN pip3 install flask forex_python
 
 WORKDIR /
 COPY ["MainScores.py", "Scores.txt", "Utils.py", "./"]
-#COPY ["chromedriver.exe", "DevOps Course/"]
-#COPY ["/templates/*", "/templates/"]
-#COPY ["chromedriver.exe", "/usr/local/bin"]
+
 CMD python MainScores.py
